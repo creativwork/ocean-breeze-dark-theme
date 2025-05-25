@@ -1,0 +1,72 @@
+{
+  "name": "ocean-breeze-dark-theme",
+  "displayName": "Ocean Breeze Dark Theme",
+  "description": "A beautiful dark theme with ocean-inspired colors featuring teal, warm orange, and soft purple accents",
+  "version": "0.1.0",
+  "publisher": "creativwork",
+  "author": "Martin Matanovic <me@creativwork.org> (https://github.com/creativwork)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creativwork/ocean-breeze-dark-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/creativwork/ocean-breeze-dark-theme/issues"
+  },
+  "homepage": "https://github.com/creativwork/ocean-breeze-dark-theme#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "ocean",
+    "teal",
+    "orange",
+    "purple",
+    "modern",
+    "clean",
+    "accessibility",
+    "syntax highlighting",
+    "night mode",
+    "low light"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ocean Breeze Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ocean-breeze-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed for theme'",
+    "test": "echo 'No tests for theme'"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.32.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0f1419",
+    "theme": "dark"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "virtualWorkspaces": true,
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "preview": false,
+  "type": "commonjs"
+}
